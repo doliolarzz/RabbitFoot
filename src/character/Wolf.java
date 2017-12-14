@@ -28,7 +28,7 @@ import utility.RandomGenerator;
 
 public class Wolf extends Animal {
 
-	public Wolf instance;
+	private Wolf instance;
 	private boolean isStun;
 	private Pair gotoThis;
 
