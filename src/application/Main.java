@@ -16,8 +16,6 @@ public class Main extends Application {
 			ImageLoader.initailize();
 			SceneManager.initialize(primaryStage);
 			SceneManager.gotoMenu();
-			//primaryStage.resizableProperty().setValue(Boolean.FALSE);
-			//primaryStage.initStyle(StageStyle.UTILITY);
 			primaryStage.setTitle("Rabbit's Foot");
 			primaryStage.centerOnScreen();
 		} catch (Exception e) {
