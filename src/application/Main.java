@@ -5,7 +5,6 @@ import image.ImageLoader;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import scene.SceneManager;
 
 public class Main extends Application {

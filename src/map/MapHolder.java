@@ -93,7 +93,8 @@ public class MapHolder {
 
 	public static void deleteTrap(Pair index) {
 		trap.remove(index);
-		NormalBlock nb = new NormalBlock(index.getX(), index.getY(), mapData.get(index.getY()).get(index.getX()).getId());
+		NormalBlock nb = new NormalBlock(index.getX(), index.getY(),
+				mapData.get(index.getY()).get(index.getX()).getId());
 		nb.setPosition(mapData.get(index.getY()).get(index.getX()).getPosition());
 		nb.setHexagon(mapData.get(index.getY()).get(index.getX()).getHexagon());
 		mapData.get(index.getY()).set(index.getX(), nb);

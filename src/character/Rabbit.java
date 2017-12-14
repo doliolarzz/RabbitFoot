@@ -132,7 +132,8 @@ public class Rabbit extends Animal {
 			int jumpDi = ((JumpBlock) MapHolder.getMapData().get(getIndex().getY()).get(getIndex().getX()))
 					.getDirection();
 			if (Math.abs(getDirection() - jumpDi) == 3) {
-				return MapHolder.getMapData().get(getIndex().getY()).get(getIndex().getX()).getNextBlock()[getDirection()];
+				return MapHolder.getMapData().get(getIndex().getY()).get(getIndex().getX())
+						.getNextBlock()[getDirection()];
 			}
 			setAngle(jumpDi);
 			setDirection(jumpDi);

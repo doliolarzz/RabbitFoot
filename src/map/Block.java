@@ -110,6 +110,5 @@ public abstract class Block {
 	public void setNextBlock(Pair[] nextBlock) {
 		this.nextBlock = nextBlock;
 	}
-	
-	
+
 }

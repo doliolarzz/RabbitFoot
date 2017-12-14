@@ -97,9 +97,11 @@ public class Wolf extends Animal {
 				Timeline timeline = new Timeline();
 				int i = 0;
 				for (i = 0; i < 6; ++i) {
-					if (MapHolder.getMapData().get(getIndex().getY()).get(getIndex().getX()).getNextBlock()[i] != null) {
-						if (MapHolder.getMapData().get(getIndex().getY()).get(getIndex().getX()).getNextBlock()[i].equals(
-								MapHolder.getMapData().get(runPath.peek().getY()).get(runPath.peek().getX()).getIndex())) {
+					if (MapHolder.getMapData().get(getIndex().getY()).get(getIndex().getX())
+							.getNextBlock()[i] != null) {
+						if (MapHolder.getMapData().get(getIndex().getY()).get(getIndex().getX()).getNextBlock()[i]
+								.equals(MapHolder.getMapData().get(runPath.peek().getY()).get(runPath.peek().getX())
+										.getIndex())) {
 							break;
 						}
 					}
